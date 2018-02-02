@@ -38,23 +38,6 @@
   <div class="container-fluid">
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="nav-wrap">
-		<!-- 
-        <form class="search-form" action="{% url "post:post_list" %}" method="post">
-          {% csrf_token %}
-          <input class="tag-search" type="text" name="tag" placeholder="검색" pattern="#?[\wㄱ-ㅎ|ㅏ-ㅣ|가-힣]+" title="특수문자, 공백 입력불가" required >
-          {# <input type="submit"> - input이 하나일 때는 별도의 submit 없이 엔터로 전송이 가능하다.#}
-          <span class="search-icon"></span>
-        </form>
-        <span class="pull-right">
-          <a class="new-post" href="{% url "post:post_new" %}"></a>
-          <a class="follow-list" href="{% url "post:follow_post_list" %}"></a>
-          {% if user.is_authenticated %}
-          <a class="account" href="{% url "post:my_post_list" user.username %}"></a>
-          {% else %}
-          <a  class="account" href="{% url "login" %}"></a>
-          {% endif %}
-        </span>
-		-->
 		<a href="/"><img src="/static/images/resources/logo.png" class="img-responsive center-block logo"/></a>
       </div>
     </nav>
