@@ -62,7 +62,11 @@
 		<div class="btn-group" role="group">
 		<button type="button" class="btn-link btn-space""><a href="/"><img id="full_1" src="/static/images/resources/emp_main.png" onclick = "changeColor()" class="img-responsive center-block"/></a></button>
 		<button type="button" class="btn-link btn-space"><a href="/post/explore/tags/tagsearch#/"><img src="/static/images/resources/emp_search.png" class="img-responsive center-block"/></a></button>
+		{% if user.is_authenticated %}
 		<button type="button" class="btn-link btn-space"><a href="/post/new/"><img src="/static/images/resources/emp_upload.png" class="img-responsive center-block"/></a></button>
+		{% else %}
+		<button type="button" class="btn-link btn-space"><a href="{% url "signupsite" %}"><img src="/static/images/resources/emp_upload.png" class="img-responsive center-block"/></a></button>
+		{% endif %}
 		{% if user.is_authenticated %}
 		<button type="button" class="btn-link btn-space"><a href="{% url "post:my_post_list" user.username %}"><img src="/static/images/resources/emp_profile.png" class="img-responsive center-block"/></a></button>
 		{% else %}
@@ -81,22 +85,6 @@
   {% endfor %}
   </script>
   {% endif %}
-  
-  <script>
-            var image =  document.getElementById("full_1");
-            function changeColor()
-            {
-                if (image.getAttribute('src') == "/static/images/resources/emp_main.png")
-                {
-                    image.src = "/static/images/resources/full_main.png";
-                }
-                else
-                {
-                    image.src = "/static/images/resources/emp_main.png";
-                }
-            }
-    </script>
-
   <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <!-- 모든 컴파일된 플러그인을 포함합니다 (아래), 원하지 않는다면 필요한 각각의 파일을 포함하세요 -->
