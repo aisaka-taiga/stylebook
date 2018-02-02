@@ -1,0 +1,55 @@
+{% load static %}
+{% load socialaccount %}
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  {# <meta name="viewport" content="width=device-width, initial-scale=1">#}
+
+  <!-- 위 3개의 메타 태그는 *반드시* head 태그의 처음에 와야합니다; 어떤 다른 콘텐츠들은 반드시 이 태그들 *다음에* 와야 합니다 -->
+  <title>패션고자</title>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+  <!-- 부트스트랩 -->
+  <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}" >
+  <link rel="stylesheet" href="{% static 'css/base.css' %}">
+  <link rel="stylesheet" href="{% static 'css/layout.css' %}">
+  <link rel="stylesheet" href="{% static 'css/post.css' %}">
+  <link rel="stylesheet" href="{% static 'css/mylist.css' %}">
+  <link rel="stylesheet" href="{% static 'css/search.css' %}">
+  <link rel="stylesheet" href="{% static 'css/account_form.css' %}">
+  <link rel="stylesheet" href="{% static 'css/post_upload.css' %}">
+  <link rel="stylesheet" href="{% static 'css/media.css' %}">
+  <!-- IE8 에서 HTML5 요소와 미디어 쿼리를 위한 HTML5 shim 와 Respond.js -->
+  <!-- WARNING: Respond.js 는 당신이 file:// 을 통해 페이지를 볼 때는 동작하지 않습니다. -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+{% block title %}
+{% endblock %}
+
+{% block content %}
+  <div class="form">
+  		<a href="/accounts/login"><img src="/static/images/resources/logo2.png" class="img-responsive center-block logo marginstopper"/></a>
+      {% csrf_token %}
+	  		  <a href="{% url "signup" %}"><p class="submit_btn2 social_login_btn2"><span class="fb-icon2"></span>로그인</p></a>
+			  <a href="{% url "signup" %}"><p class="submit_btn2 social_login_btn3"><span class="fb-icon2"></span>회원가입</p></a>
+<h2><span>or</span></h2>
+
+      {% for provider in providers %}
+      {% if provider.social_app %}
+      <a href="{% provider_login_url provider.id %}"><p class="submit_btn social_login_btn"><span class="fb-icon2"></span>페이스북 로그인</p></a>
+      {% else %}
+      Provider {{ provider.name }} 설정이 필요합니다.
+      {% endif %}
+      {% endfor %}
+	  <div class="infotab"><a href="{% url "signup" %}">개인정보 취급방침 및 서비스 약관</a></div>
+	  <div class="infotab2">Copyright © 2018 Stylebook Corp. All rights reserved.</div>
+    </form>
+  </div>
+{% endblock %}

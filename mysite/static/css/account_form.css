@@ -1,0 +1,261 @@
+.form-container {
+  position: relative;
+  max-width : auto;
+  min-height: 1000px;
+
+  margin: 0 auto;
+  padding : 50px;
+}
+
+.form-container input,
+.form-container textarea,
+.form-container select {
+  width: 100%;
+  background: #0002;
+  border: 1px solid #0002;
+  border-radius: 3px;
+  box-sizing: border-box;
+  color: #262626;
+  font-size: 50px;
+  padding: 7px 8px 7px;
+  margin-bottom: 5px;
+}
+
+.form-container label{
+  font-size: 36px;
+  margin-top: 20px;
+}
+
+.form {
+  max-width: auto;
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
+  padding: 0 40px 25px 40px;
+  margin: 0 0 0;
+}
+
+.infotab{
+	margin-top: 150px;
+	margin-bottom: 10px;
+	text-align: center;
+	font-size: 35px;
+}
+
+.infotab2{
+	margin-top: 20px;
+	text-align: center;
+	font-size: 20px;
+}
+
+.infotab a{
+	color: #67686b;
+}
+
+.form .submit_btn {
+  margin-left: 50px;
+  background: #BF2700;
+  border-color: #BF2700;
+  color: #fff;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 15px;
+  font-size: 55px;
+  font-weight: 600;
+  line-height: 28px;
+  outline: none;
+  width: 90%;
+  height : 130px;
+  padding: 0;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.form .submit_btn2 {
+  margin-left: 50px;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 15px;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 28px;
+  outline: none;
+  width: 90%;
+  height : 130px;
+  padding: 0;
+  margin-top:  5px;
+  margin-bottom: 10px;
+  color: #000000;
+  font-weight: bold;
+}
+
+.form a {
+  text-decoration: none;
+}
+
+.form .social_login_btn {
+  text-align: center;
+  vertical-align: middle;
+  border-color: #4C6396;
+    background: #4C6396;
+}
+
+.form .social_login_btn2 {
+  text-align: center;
+  vertical-align: middle;
+  border-color: #BF2700;
+  background: #BF2700;
+  color: #FFF;
+}
+
+.form .social_login_btn3 {
+  text-align: center;
+  vertical-align: middle;
+  border-color: #EAEAEA;
+  background: #EAEAEA;
+  color: #535456;
+}
+
+.form .fb-icon {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  background-image: url(/static/images/sprites/fb_logo.png);
+  background-size: contain;
+  background-position: center;
+  margin: 25px;
+  position: relative;
+  vertical-align: middle;
+  align-content: center;
+  text-align: center;
+  }
+  
+ .form .fb-icon2 {
+  height: 100px;
+  display: inline-block;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  position: relative;
+  vertical-align: middle;
+  align-content: center;
+  }
+
+.shortcut {
+  width: auto;
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 1px;
+  margin: 0 0 10px;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.shortcut .link {
+  color: #262626;
+  font-size: 40px;
+  margin: 15px;
+  text-align: center;
+}
+.shortcut .signup-link {
+  font-size: 32px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+}
+
+.account-form-container {
+  width: 950px;
+}
+
+.account-form-container p {
+  margin-bottom: 20px;
+  vertical-align: middle;
+}
+
+.account-form-container .account-form {
+  padding: 40px;
+}
+
+.account-form-container .account-form .user-title {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.account-form-container .account-form .user-title .account-pic {
+  width: 38px;
+  height: 38px;
+  background-color: #fafafa;
+  border: 15px solid rgba(50, 50, 50, 0.0975);
+  margin-right: 8px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.account-form-container .account-form .user-title .usernsme,
+.account-form-container .account-form .user-title .form-title {
+  display: inline-block;
+  margin: 0 10px;
+  vertical-align: middle;
+  font-weight: 400;
+  font-size: 36px;
+
+}
+
+.account-form-container #picture-clear_id {
+  width: 12px;
+}
+
+.account-form-container select {
+  background: 25 25;
+  border: 1px solid #efefef;
+  border-radius: 3px;
+  color: #262626;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  height: 32px;
+  padding: 0 30px 0 10px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+.account-form-container .shortcut {
+  width: 100%;
+
+}
+
+.account-form-container .shortcut .signup-link {
+  margin-top: 20px;
+}
+
+.marginstopper {
+margin-top: 250px;
+margin-bottom: 280px;
+}
+
+
+h2 {
+    margin-top: 140px;
+	margin-bottom: 140px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+h2:before {
+    border-top: 1px solid #9d9d9e;
+    content:"";
+    margin: 0 auto; /* this centers the line to the full width specified */
+    position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
+    top: 25px; left: 0; right: 0; bottom: 0;
+    width: 75%;
+    z-index: -1;
+}
+
+h2 span { 
+    /* to hide the lines from behind the text, you have to set the background color the same as the container */ 
+    background: #fff; 
+	color: #9d9d9e;
+    padding: 0 30px; 
+	font-size: 25px;
+}

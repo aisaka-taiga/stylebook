@@ -1,0 +1,223 @@
+article.post-wrap {
+  max-width: 800px;
+  overflow: hidden;
+  margin: 0 auto;
+  border: 1px solid #e7e7e7;
+  background-color: #fff;
+  border-radius: 4px;
+  margin-bottom: 60px;
+}
+
+span {
+	font-size: 23px;
+}
+
+div{
+	font-size: 23px;
+}
+
+article.post-wrap .post-username,
+article.post-wrap .comment-username,
+article.post-wrap .like-count {
+  font-weight: 600;
+  text-overflow: ellipsis;
+  margin-right: .3em;
+  font-size: 45px;
+}
+
+article.post-wrap header {
+  width: 800px;
+  height: 125px;
+  padding: 16px;
+  border-bottom: 1px solid #efefef;
+  color: #262626;
+}
+
+article.post-wrap header .user-title {
+  text-decoration: none;
+  color: #262626;
+}
+
+article.post-wrap header .user-pic {
+  width: 100px;
+  height: 100px;
+  background-color: #fafafa;
+  border: 1px solid rgba(0, 0, 0, 0.0975);
+  margin-right: 8px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+article.post-wrap header .follow {
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 1px;
+  width: 250px;
+  height: 80px;
+  margin-top: 10px;
+  padding: 0 8px;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 26px;
+  outline: 0;
+}
+
+article.post-wrap header .follow-btn {
+  background: #3897f0;
+  border-color: #3897f0;
+  color: #fff;
+}
+
+article.post-wrap header .following-btn {
+  border-color: #dbdbdb;
+  background-color: #fff;
+}
+
+article.post-wrap header .post-delete-form {
+  display: inline-block;
+}
+
+article.post-wrap header .post-edit, article.post-wrap header .post-delete {
+  border: none;
+  height: 32px;
+  margin-right: 10px;
+  line-height: 32px;
+  color: #c7c7c7;
+  background-color: #fff;
+  vertical-align: middle;
+  display: inline-block;
+  font-size: 34px;
+}
+
+article.post-wrap header .post-edit:hover, article.post-wrap header .post-delete:hover {
+  text-decoration: none;
+  color: #262626;
+}
+
+article.post-wrap header .post-delete {
+}
+
+article.post-wrap .post-content {
+  padding: 0 16px;
+}
+
+article.post-wrap .post-content .like {
+  background-image: url(/static/images/resources/emp_heart.png);
+  width: 85px;
+  height: 82px;
+  border: none;
+  background-color: #fff;
+}
+
+article.post-wrap .post-content .liked {
+  background-image: url(/static/images/resources/full_heart.png);
+}
+
+article.post-wrap .post-content .commnet-icon {
+  height: 83px;
+  width: 81px;
+  background-image: url(/static/images/resources/comment_add.png);
+  border: none;
+  background-color: #fff;
+   margin-top: 5px;
+  margin-left: 12px;
+}
+
+/*
+article.post-wrap .post-content .like {
+  height: 24px;
+  width: 24px;
+  background-image: url(/static/images/resources/emp_heart.png);
+  border: none;
+  background-color: #fff;
+  margin: 8px 8px 8px 0;
+}
+
+article.post-wrap .post-content .liked {
+  background-position: 0 -349px;
+}
+
+article.post-wrap .post-content .to-like {
+  background-position: -26px -349px;
+}
+
+article.post-wrap .post-content .like-count {
+  margin-bottom: 5px;
+}
+
+article.post-wrap .post-content .commnet-icon {
+  height: 24px;
+  width: 24px;
+  background-image: url(/static/images/sprites/fef349.png);
+  background-position: -306px -289px;
+  border: none;
+  background-color: #fff;
+  margin: 8px;
+  margin-left: 4px;
+}
+*/
+
+article.post-wrap .post-content .time {
+  margin: 5px 0;
+  font-size: 20px;
+  line-height: 18px;
+  color: #999;
+  text-transform: uppercase;
+}
+
+article.post-wrap .post-content .comment-more {
+  display: block;
+  margin: 5px 0;
+  outline: none;
+  padding: 0;
+  border: none;
+  color: #999;
+  background-color: #fff;
+}
+
+article.post-wrap .post-content .comment-more:hover {
+  color: #262626;
+}
+
+article.post-wrap .post-content .del-comment {
+  background: 0 0;
+  border: none;
+  color: #c7c7c7;
+  cursor: pointer;
+  float: right;
+  padding: 0;
+  margin-right: 12px;
+  width: 2em;
+  font-size: 25px;
+}
+
+article.post-wrap .post-content .del-comment:hover {
+  color: #262626;
+}
+
+article.post-wrap .post-content .add-comment-wrap {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-top: 1px solid #efefef;
+  color: #999;
+}
+
+article.post-wrap .post-content .add-comment-wrap .comment-form {
+  height: 40px;
+  width: 600px;
+  border: none;
+  font-size: 20px;
+  outline: 0;
+}
+
+article.post-wrap .post-content .add-comment-wrap .add-comment-btn {
+  border: none;
+  width: 100px;
+  height: 40px;
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 30px;
+  color: #3897f0;
+  background-color: #fff;
+  float: right;
+}
